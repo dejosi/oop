@@ -14,7 +14,6 @@ class Lecturer(Mentor):
     for grade in self.grades.values():
       sum_grades += sum(grade)
     return round((sum_grades) / len(self.grades),1)
-    # return round(sum_grades / len(self.grades), 1)
 
   def __gt__(self, other):
     if not isinstance(other, Lecturer):
